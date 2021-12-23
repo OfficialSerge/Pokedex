@@ -1,0 +1,141 @@
+.stats {
+  display: grid;
+  font-family: "Trebuchet MS";
+  color: var(--black);
+  grid-template-columns: 5% 10% 60% 10% 5%;
+  grid-template-rows: 5% 35% 5% 5% 15% 25%;
+  height: inherit;
+  margin: 10px;
+  grid-gap: 10px;
+  grid-template-areas: 
+  ". . label . ."
+  ". . card . ."
+  ". . name . ."
+  ". . type . ."
+  ". . desc . ."
+  ". . table . .";
+}
+
+.label {
+  grid-area: label;
+  width: 225px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--black);
+  color: var(--black);
+  border-radius: 0.3rem;
+  transition-duration: 0.4s;
+}
+
+.label:hover {
+  background-color: var(--black);
+  color: var(--gray);
+}
+
+.label:active {
+  transform: scale(0.9);
+}
+
+.card {
+  grid-area: card;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.name {
+  grid-area: name;
+  background-color: rgba(0, 0, 0, 0);
+  font-size: xx-large;
+  border: none;
+  margin-top: 5px;
+}
+
+.type {
+  grid-area: type;
+  font-size: larger;
+  margin: 5px;
+}
+
+.desc {
+  grid-area: desc;
+  font-size: large;
+  margin: 0;
+}
+
+.table-div {
+  grid-area: table;
+}
+
+.table-div h3 {
+  padding: 0 0 5px 10px;
+  margin: 0;
+  text-align: left;
+  border-bottom: 1px solid var(--black);
+}
+
+.table {
+  border-collapse: collapse;
+}
+
+.table th, td {
+  border-bottom: 1px solid var(--black);
+  padding: 2px 10px;
+  font-size: .875rem;
+  font-weight: normal;
+  text-align: right;
+}
+
+.table th {
+  white-space: nowrap;
+}
+
+.cell-barchart {
+  width: 100%;
+}
+
+.barchart-bar-0 {
+  border: 1px solid rgb(170, 68, 68);
+  border-radius: 4px;
+  height: 5px;
+  background-color: rgb(219, 34, 34);
+}
+
+.barchart-bar-1 {
+  border: 1px solid rgb(212, 105, 12);
+  border-radius: 4px;
+  height: 5px;
+  background-color: rgb(241, 124, 21);
+}
+
+.barchart-bar-2 {
+  border: 1px solid rgb(219, 206, 18);
+  border-radius: 4px;
+  height: 5px;
+  background-color: rgb(253, 237, 11);
+}
+
+.barchart-bar-3 {
+  border: 1px solid rgb(161, 201, 51);
+  border-radius: 4px;
+  height: 5px;
+  background-color: rgb(176, 228, 57);
+}
+
+.barchart-bar-4, .barchart-bar-5 {
+  border: 1px solid rgb(64, 184, 40);
+  border-radius: 4px;
+  height: 5px;
+  background-color: rgb(73, 209, 46);
+}
+
+.barchart-bar-6, .barchart-bar-7 {
+  border: 1px solid rgb(1, 139, 1);
+  border-radius: 4px;
+  height: 5px;
+  background-color: rgb(1, 158, 1);
+}

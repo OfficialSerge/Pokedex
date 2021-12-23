@@ -1,0 +1,159 @@
+.form {
+  display: grid;
+  font-family: "Trebuchet MS";
+  color: var(--black);
+  grid-template-columns: 5% 10% 60% 10% 5%;
+  grid-template-rows: 5% 35% 5% 5% 15% 25%;
+  height: inherit;
+  margin: 10px;
+  grid-gap: 10px;
+  grid-template-areas: 
+  ". . label . ."
+  ". . card-form . ."
+  ". . pok-name . ."
+  ". . pok-type . ."
+  ". . pok-info . ."
+  ". . pok-desc . .";
+}
+
+.label {
+  grid-area: label;
+  width: 225px;
+  margin: 0 auto;
+  border: 3px solid var(--black);
+  border-radius: 0.3rem;
+  transition-duration: 0.4s;
+}
+
+.label:hover {
+  background-color: var(--black);
+  color: var(--gray);
+}
+
+.label:active {
+  transform: scale(0.9);
+}
+
+.card-form {
+  grid-area: card-form;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 210px;
+  margin: 0 auto;
+}
+
+.card-form input{
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 3px solid var(--black);
+  border-radius: 0.3rem;
+  transition-duration: 0.4s;
+  height: 85%;
+  padding: 5px;
+}
+
+.card-form input:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: var(--gray);
+}
+
+.card-form input:active {
+  transform: scale(0.9);
+}
+
+.card-form img {
+  height: 100%;
+}
+
+.pok-name {
+  grid-area: pok-name;
+  background-color: var(--dgray);
+  border-radius: 0.3rem;
+  border:3px solid var(--black);
+  color: var(--black);
+  resize: none;
+  padding: 9px;
+  overflow: hidden;
+  font-size: large;
+}
+
+.pok-name::placeholder {
+  opacity: 1;
+  color: var(--black);
+}
+
+.pok-type {
+  grid-area: pok-type;
+  background-color: var(--dgray);
+  border-radius: 0.3rem;
+  border:3px solid var(--black);
+  color: var(--black);
+  resize: none;
+  padding: 9px;
+  overflow: hidden;
+  font-size: large;
+}
+
+.pok-info {
+  grid-area: pok-info;
+  display: grid;
+  justify-content: center;
+  grid-gap: 2%;
+  grid-template-columns: 49% 49%;
+}
+
+.pok-info input {
+  background-color: var(--dgray);
+  border-radius: 0.3rem;
+  border:3px solid var(--black);
+  color: var(--black);
+  padding: 5px;
+  font-size: large;
+  width: auto;
+}
+
+.pok-info input::placeholder {
+  opacity: 1;
+  color: var(--black);
+}
+
+.pok-desc {
+  grid-area: pok-desc;
+  display: grid;
+}
+
+.pok-desc textarea {
+  background-color: var(--dgray);
+  border-radius: 0.3rem;
+  border:3px solid var(--black);
+  color: var(--black);
+  height: 130px;
+  resize: none;
+  padding: 9px;
+  font-size: large;
+}
+
+.pok-desc textarea::placeholder {
+  opacity: 1;
+  color: var(--black);
+}
+
+.pok-desc button {
+  width: 100%;
+  height: 35px;
+  margin: 10px auto;
+  border: 3px solid var(--black);
+  background-color: rgba(0, 0, 0, 0);
+  color: var(--black);
+  border-radius: 0.3rem;
+  transition-duration: 0.4s;
+}
+
+.pok-desc button:hover {
+  background-color: var(--black);
+  color: var(--gray);
+}
+
+.pok-desc button:active {
+  transform: scale(0.9);
+}

@@ -1,0 +1,10 @@
+:root {
+  --gray: #edf2f4;
+  --dgray: #8d99ae;
+  --black: #2b2d42;
+}
+
+body {
+  background-color: var(--gray);
+  overflow-y: scroll;
+}
